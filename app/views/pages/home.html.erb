@@ -1,4 +1,40 @@
-<div>
-  <h1 class="font-bold text-4xl">Pages#home</h1>
-  <p>Find me in app/views/pages/home.html.erb</p>
+<div class="bg-white px-6 py-24 sm:py-32 lg:px-8">
+  <div class="mx-auto max-w-2xl text-center">
+    <h2 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Anonymous Feedback</h2>
+    <p class="mt-6 text-lg leading-8 text-gray-600">This is a free tool that allows anyone to share a brief suggestion, anonymously, by simply providing the Twitter username of the brands you love (or hate).</p>
+  </div>
 </div>
+
+<div class="max-w-xs ">
+  <label for="twitter-handle" class="block text-sm font-medium leading-6 text-gray-900">Twitter Handle</label>
+  <div class="mt-2 flex rounded-md shadow-sm">
+    <span class="inline-flex items-center rounded-l-md border border-r-0 border-gray-300 px-3 text-gray-500 sm:text-sm">@</span>
+    <input type="text" name="twitter-handle" id="twitter-handle" class="block w-full min-w-0 flex-1 rounded-none rounded-r-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="jack">
+  </div>
+</div>
+
+
+
+<form action="#">
+  <div>
+    <div class="mt-2">
+      <div id="tabs-1-panel-1" class="-m-0.5 rounded-lg p-0.5" aria-labelledby="tabs-1-tab-1" role="tabpanel" tabindex="0">
+        <label for="feedback" class="sr-only">feedback</label>
+        <div>
+          <textarea rows="5" name="feedback" id="feedback" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Add your feedback..."></textarea>
+        </div>
+      </div>
+      <div id="tabs-1-panel-2" class="-m-0.5 rounded-lg p-0.5" aria-labelledby="tabs-1-tab-2" role="tabpanel" tabindex="0">
+      </div>
+    </div>
+  </div>
+  
+  <div class="mt-2 flex justify-end">
+    <div class="mt-1 mr-5 text-gray-400">
+      <p>50 / 250</p>
+    </div>
+      <button type="submit" class="inline-flex items-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Post</button>
+  </div>
+</form>
+
+
