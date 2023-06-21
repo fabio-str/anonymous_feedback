@@ -1,9 +1,7 @@
 class TwitterService
     def self.tweet!(message)
         require 'oauth/request_proxy/typhoeus_request'
-
-        require 'oauth/request_proxy/typhoeus_request'
-
+        
         body = {
         "text": message
         }
