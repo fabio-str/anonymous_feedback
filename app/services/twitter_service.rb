@@ -1,10 +1,14 @@
+require 'oauth/request_proxy/typhoeus_request'
+
 class TwitterService
-    def self.tweet!(message)
-        require 'oauth/request_proxy/typhoeus_request'
+    
+    def self.message(feedback)
+        ".@#{feedback.recipient_handle}, #{feedback.text}"
+    end
+    
+    def self.tweet!(feedback)
         
-        body = {
-        "text": message
-        }
+        body = { "text": message(feedback) }
 
         @consumer = OAuth::Consumer.new(
         ENV['consumer_key'],
