@@ -9,7 +9,6 @@ class Feedback < ApplicationRecord
         self.recipient_handle = self.recipient_handle.gsub('@', '')
     end
 
-
     def send_tweet
         TwitterService.tweet!(self)
     end

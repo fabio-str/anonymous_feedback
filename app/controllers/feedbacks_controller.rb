@@ -8,7 +8,8 @@ class FeedbacksController < ApplicationController
         @feedback = Feedback.create(feedback_params)
 
         if @feedback.save
-            redirect_to '/', notice: "Tweet sent successfully!"
+            session[:tweet_url] = @feedback.tweet_url
+            redirect_to root_path
         else
             render :home
         end

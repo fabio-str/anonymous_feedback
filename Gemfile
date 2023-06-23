@@ -49,6 +49,7 @@ gem 'oauth'
 gem 'typhoeus'
 gem 'figaro'
 
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
