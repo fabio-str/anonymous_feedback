@@ -10,7 +10,7 @@ class FeedbacksController < ApplicationController
         if @feedback.save
             redirect_to '/', notice: "Tweet sent successfully!"
         else
-            render :new
+            render :home
         end
     end
 
